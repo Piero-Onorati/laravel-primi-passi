@@ -18,5 +18,6 @@ Route::get('/', function () {
 })-> name('homepage');
 
 Route::get('/about', function () {
-    return view('about');
+    $data = [ 'title' => 'This is an About Page!!!'];
+    return view('about', $data);
 })-> name('aboutpage');

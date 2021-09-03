@@ -90,7 +90,7 @@
                 </div>
                 
 
-                <h2>This is an About Page!!!</h2>
+                <h2>{{$title}}</h2>
             </div>
         </div>
     </body>
