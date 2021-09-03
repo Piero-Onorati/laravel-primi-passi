@@ -61,6 +61,11 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            ul{
+                text-align: start;
+            }
+                   
         </style>
     </head>
     <body>
@@ -89,8 +94,17 @@
                     <a href="{{route('aboutpage')}}">About</a>
                     <a href="{{route('contactspage')}}">Contacts</a>
                 </div>
+                
+                <h2>{{$title}}</h2>
 
-                <h2>Hello World!!!</h2>
+                <ul>
+                   @foreach ($contactList as $item)
+                       <li>
+                           {{$item}}
+                       </li>
+                   @endforeach
+
+                </ul>
             </div>
         </div>
     </body>

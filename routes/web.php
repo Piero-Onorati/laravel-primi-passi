@@ -21,3 +21,11 @@ Route::get('/about', function () {
     $data = [ 'title' => 'This is an About Page!!!'];
     return view('about', $data);
 })-> name('aboutpage');
+
+Route::get('/contact', function () {
+    $data = [ 
+        'title' => 'This is the Contacts Page!!!',
+        'contactList' => [ 'Pippo', 'Pluto', 'Paperino']
+    ];
+    return view('contacts', $data);
+})-> name('contactspage');

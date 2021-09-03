@@ -87,9 +87,9 @@
                 <div class="links">
                     <a href="{{route('homepage')}}">Home</a>
                     <a href="{{route('aboutpage')}}">About</a>
+                    <a href="{{route('contactspage')}}">Contacts</a>
                 </div>
                 
-
                 <h2>{{$title}}</h2>
             </div>
         </div>
